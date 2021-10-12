@@ -4,7 +4,8 @@ import can
 def print_message(msg):
     print(msg)
 
-#test
+
+# test
 bus_rx = can.interfaces.nican.NicanBus('CAN0', can_filters=None, bitrate=1000000, log_errors=True)
 logger = can.Logger("logfile_1.asc")  # save log to asc file
 listeners = [
