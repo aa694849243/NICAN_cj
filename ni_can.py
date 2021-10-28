@@ -1,12 +1,12 @@
 import can
-
+from can.interfaces.nican import NicanBus as Bus
 
 def print_message(msg):
     print(msg)
 
 
 # test
-bus_rx = can.interfaces.nican.NicanBus('CAN0', can_filters=None, bitrate=1000000, log_errors=True)
+bus_rx = Bus('CAN0', bitrate=1000000, log_errors=True)
 logger = can.Logger("logfile_1.asc")  # save log to asc file
 listeners = [
     print_message,  # Callback function, print the received messages
