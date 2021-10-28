@@ -5,7 +5,7 @@ def print_message(msg):
     print(msg)
 
 
-# test 11
+# test 1tttttt
 bus_rx = Bus('CAN0', bitrate=1000000, log_errors=True)
 logger = can.Logger("logfile_1.asc")  # save log to asc file
 listeners = [
